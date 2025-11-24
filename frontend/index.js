@@ -61,7 +61,9 @@ document.addEventListener("keydown", function (event){
 })
 
 function saveTime(t){
-    const url =  `https://localhost:8080/${t}`
+    
+    const url =  `localhost:8080/save/${String(t)}`
+    console.log("using url : " +  url);
     fetch(url, {
     method: 'POST',
     headers: {

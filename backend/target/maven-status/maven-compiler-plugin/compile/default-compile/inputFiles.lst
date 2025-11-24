@@ -1,0 +1,5 @@
+/home/matt/Code/RubiksCubeTimer/backend/src/main/java/com/MatthewEtnyre/rubiksTimer/RubiksTimerApplication.java
+/home/matt/Code/RubiksCubeTimer/backend/src/main/java/com/MatthewEtnyre/rubiksTimer/controller/TimerConroller.java
+/home/matt/Code/RubiksCubeTimer/backend/src/main/java/com/MatthewEtnyre/rubiksTimer/entity/TimeRecord.java
+/home/matt/Code/RubiksCubeTimer/backend/src/main/java/com/MatthewEtnyre/rubiksTimer/repository/TimeRepository.java
+/home/matt/Code/RubiksCubeTimer/backend/src/main/java/com/MatthewEtnyre/rubiksTimer/service/TimerService.java
