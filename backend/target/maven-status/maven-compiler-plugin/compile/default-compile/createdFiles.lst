@@ -1,5 +1,7 @@
-com/MatthewEtnyre/rubiksTimer/entity/TimeRecord.class
 com/MatthewEtnyre/rubiksTimer/controller/TimerConroller.class
+com/MatthewEtnyre/rubiksTimer/config/CorsConfig$1.class
+com/MatthewEtnyre/rubiksTimer/entity/TimeRecord.class
 com/MatthewEtnyre/rubiksTimer/RubiksTimerApplication.class
 com/MatthewEtnyre/rubiksTimer/repository/TimeRepository.class
 com/MatthewEtnyre/rubiksTimer/service/TimerService.class
+com/MatthewEtnyre/rubiksTimer/config/CorsConfig.class
