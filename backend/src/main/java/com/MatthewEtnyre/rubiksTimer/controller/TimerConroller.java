@@ -40,4 +40,9 @@ public class TimerConroller{
     public ResponseEntity<String> DeleteLast(){
         return TS.DeleteLast();
     }
+
+    @DeleteMapping("/delte/all")
+    public ResponseEntity<String> DeleteAll(){
+        return TS.DeleteAll();
+    }
 }

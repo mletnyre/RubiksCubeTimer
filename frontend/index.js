@@ -120,3 +120,20 @@ document.getElementById("delete").addEventListener("click", function (event){
     DeleteLastSolve();
     alert("LAST SOLVE DELTED")
 })
+
+function DeleteAllSolves(){
+    const url =  `http://localhost:8080/delte/all`
+    console.log("using url : " +  url);
+    fetch(url, {
+    method: 'DELETE',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+    })
+}
+
+document.getElementById("reset-button").addEventListener("click", function (event){
+    alert("deleting all solves")
+    console.log("Deleting all solves");
+    DeleteAllSolves();
+})

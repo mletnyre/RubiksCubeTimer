@@ -64,4 +64,9 @@ public class TimerService{
 
         return ResponseEntity.ok().body("updated time");
     }
+
+    public ResponseEntity<String> DeleteAll(){
+        TR.deleteAll();
+        return ResponseEntity.ok().body("everything has been deleted");
+    }
 }
