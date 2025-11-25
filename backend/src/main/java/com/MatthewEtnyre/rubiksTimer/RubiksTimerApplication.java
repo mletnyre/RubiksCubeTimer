@@ -9,3 +9,4 @@ public class RubiksTimerApplication {
         SpringApplication.run(RubiksTimerApplication.class, args);
     }
 }
+

@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.MatthewEtnyre.rubiksTimer.service.TimerService;
 
+import jakarta.persistence.Table;
+
 @Controller
+@Table(name = "time_record")
 public class TimerConroller{
 
      private final TimerService TS ; 
