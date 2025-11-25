@@ -1,9 +1,11 @@
 package com.MatthewEtnyre.rubiksTimer.entity;
 
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType; 
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -14,11 +16,13 @@ public class TimeRecord {
     private Long id;
 
     private String time;
+    private LocalDate date; // stores only the date
 
-    protected TimeRecord() {} // JPA requires no-arg constructor
+    protected TimeRecord() {}
 
     public TimeRecord(String time) {
         this.time = time;
+        this.date = LocalDate.now(); // <-- only date, no time
     }
 
     public Long getId() {
@@ -35,5 +39,13 @@ public class TimeRecord {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 }

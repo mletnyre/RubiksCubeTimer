@@ -1,0 +1,42 @@
+/* Make body take full height and remove default margins */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* Center everything in container */
+.container {
+    display: flex;
+    flex-direction: column;   /* stack elements vertically */
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+    height: 100%;             /* full viewport height */
+    gap: 20px;                /* spacing between items */
+}
+
+/* Timer styling */
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Penalties button styling */
+#penalties button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Delete button styling */
+button:last-of-type {
+    font-size: 1rem;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.DNF{
+    background-color: rgb(250, 62, 62);
+}

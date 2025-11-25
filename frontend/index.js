@@ -61,8 +61,7 @@ document.addEventListener("keydown", function (event){
 })
 
 function saveTime(t){
-    
-    const url =  `localhost:8080/save/${String(t)}`
+    const url =  `http://localhost:8080/save/${String(t)}`
     console.log("using url : " +  url);
     fetch(url, {
     method: 'POST',
@@ -71,3 +70,53 @@ function saveTime(t){
     }
     })
 }
+
+function PlusTwoLastSolve(){
+    const url =  `http://localhost:8080/plus2`
+    console.log("using url : " +  url);
+    fetch(url, {
+    method: 'PUT',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+    })
+}
+
+document.getElementById("p2").addEventListener("click", function (event){
+    console.log("Adding +2 pen")
+    PlusTwoLastSolve();
+})
+
+
+function DNFLastSolve(){
+    const url =  `http://localhost:8080/DNF`
+    console.log("using url : " +  url);
+    fetch(url, {
+    method: 'PUT',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+    })
+}
+
+document.getElementById("DNF").addEventListener("click", function (event){
+    console.log("DNFIng last solve")
+    DNFLastSolve();
+})
+
+function DeleteLastSolve(){
+    const url =  `http://localhost:8080/DeleteLast`
+    console.log("using url : " +  url);
+    fetch(url, {
+    method: 'DELETE',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+    })
+}
+
+document.getElementById("delete").addEventListener("click", function (event){
+    console.log("Deleting last solve")
+    DeleteLastSolve();
+    alert("LAST SOLVE DELTED")
+})
